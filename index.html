@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 14
+    Review Assignment
+    
+    Poker Squares at Arthur's Games
+    Author: Hesbon Osoro
+    Date: 12/11/22  
+
+    Filename: ag_squares.html
+   -->
+
+    <title>Poker Squares at Arthur's Games</title>
+    <meta charset="utf-8" />
+    <link href="ag_reset.css" rel="stylesheet" />
+    <link href="ag_styles.css" rel="stylesheet" />
+    <script src="ag_cards2.js" async></script>
+    <script src="ag_squares.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <img src="ag_logo.png" alt="Arthur's Games" />
+      <div id="loginDIV">
+        <label for="login">Member ID</label>
+        <input id="login" name="login" type="text" />
+        <label for="pwd">Password</label>
+        <input id="pwd" name="pwd" type="password" />
+      </div>
+      <nav id="middle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Online Games</a></li>
+          <li><a href="#">Tournaments</a></li>
+          <li><a href="#">Forums</a></li>
+          <li><a href="#">My Account</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav id="left">
+      <h1>Card Games</h1>
+      <ul>
+        <li><a href="#">Draw Poker</a></li>
+        <li><a href="#">Poker Squares</a></li>
+        <li><a href="#">5 Card Stud</a></li>
+        <li><a href="#">7 Card Stud</a></li>
+        <li><a href="#">Blackjack</a></li>
+        <li><a href="#">Omaha</a></li>
+        <li><a href="#">Aces and Eights</a></li>
+        <li><a href="#">Deuces Wild</a></li>
+        <li><a href="#">Jokers Wild</a></li>
+        <li><a href="#">Spin Poker</a></li>
+        <li><a href="#">Flush Attack</a></li>
+        <li><a href="#">White Hot Aces</a></li>
+        <li class="newgroup"><a href="#">Board Games</a></li>
+        <li><a href="#">Strategy Games</a></li>
+        <li><a href="#">Logic Games</a></li>
+        <li><a href="#">Kid's Games</a></li>
+        <li><a href="#">Puzzles</a></li>
+        <li><a href="#">Trivia</a></li>
+        <li class="newgroup"><a href="#">Registration</a></li>
+        <li class="newgroup"><a href="#">Chat Room</a></li>
+        <li><a href="#">Tech Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section id="pokerTable">
+      <h1>Poker Squares</h1>
+
+      <div id="pokerBoard">
+        <img id="newCard" src="ag_cardback2.png" alt="" />
+        <input type="text" id="gameScore" value="" />
+        <label id="gameResult"></label>
+
+        <table id="oddsTable">
+          <colgroup>
+            <col class="firstCol" />
+            <col class="secondCol" />
+          </colgroup>
+          <tr>
+            <th>Hand</th>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td>Royal Flush</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Straight Flush</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Four of a Kind</td>
+            <td>16</td>
+          </tr>
+          <tr>
+            <td>Full House</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>Flush</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>Straight</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>Three of a Kind</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>Two Pair</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>One Pair</td>
+            <td>1</td>
+          </tr>
+        </table>
+
+        <table id="grid">
+          <tr>
+            <td id="c00" class="row0 col0">
+              <img src="ag_trans.gif" id="i00" alt="" />
+            </td>
+            <td id="c01" class="row0 col1">
+              <img src="ag_trans.gif" id="i01" alt="" />
+            </td>
+            <td id="c02" class="row0 col2">
+              <img src="ag_trans.gif" id="i02" alt="" />
+            </td>
+            <td id="c03" class="row0 col3">
+              <img src="ag_trans.gif" id="i03" alt="" />
+            </td>
+            <td id="c04" class="row0 col4">
+              <img src="ag_trans.gif" id="i04" alt="" />
+            </td>
+            <th id="row0sum" class="rowsum"></th>
+          </tr>
+          <tr>
+            <td id="c10" class="row1 col0">
+              <img src="ag_trans.gif" id="i10" alt="" />
+            </td>
+            <td id="c11" class="row1 col1">
+              <img src="ag_trans.gif" id="i11" alt="" />
+            </td>
+            <td id="c12" class="row1 col2">
+              <img src="ag_trans.gif" id="i12" alt="" />
+            </td>
+            <td id="c13" class="row1 col3">
+              <img src="ag_trans.gif" id="i13" alt="" />
+            </td>
+            <td id="c14" class="row1 col4">
+              <img src="ag_trans.gif" id="i14" alt="" />
+            </td>
+            <th id="row1sum" class="rowsum"></th>
+          </tr>
+          <tr>
+            <td id="c20" class="row2 col0">
+              <img src="ag_trans.gif" id="i20" alt="" />
+            </td>
+            <td id="c21" class="row2 col1">
+              <img src="ag_trans.gif" id="i21" alt="" />
+            </td>
+            <td id="c22" class="row2 col2">
+              <img src="ag_trans.gif" id="i22" alt="" />
+            </td>
+            <td id="c23" class="row2 col3">
+              <img src="ag_trans.gif" id="i23" alt="" />
+            </td>
+            <td id="c24" class="row2 col4">
+              <img src="ag_trans.gif" id="i24" alt="" />
+            </td>
+            <th id="row2sum" class="rowsum"></th>
+          </tr>
+          <tr>
+            <td id="c30" class="row3 col0">
+              <img src="ag_trans.gif" id="i30" alt="" />
+            </td>
+            <td id="c31" class="row3 col1">
+              <img src="ag_trans.gif" id="i31" alt="" />
+            </td>
+            <td id="c32" class="row3 col2">
+              <img src="ag_trans.gif" id="i32" alt="" />
+            </td>
+            <td id="c33" class="row3 col3">
+              <img src="ag_trans.gif" id="i33" alt="" />
+            </td>
+            <td id="c34" class="row3 col4">
+              <img src="ag_trans.gif" id="i34" alt="" />
+            </td>
+            <th id="row3sum" class="rowsum"></th>
+          </tr>
+          <tr>
+            <td id="c40" class="row4 col0">
+              <img src="ag_trans.gif" id="i40" alt="" />
+            </td>
+            <td id="c41" class="row4 col1">
+              <img src="ag_trans.gif" id="i41" alt="" />
+            </td>
+            <td id="c42" class="row4 col2">
+              <img src="ag_trans.gif" id="i42" alt="" />
+            </td>
+            <td id="c43" class="row4 col3">
+              <img src="ag_trans.gif" id="i43" alt="" />
+            </td>
+            <td id="c44" class="row4 col4">
+              <img src="ag_trans.gif" id="i44" alt="" />
+            </td>
+            <th id="row4sum" class="rowsum"></th>
+          </tr>
+          <tr>
+            <th id="col0sum" class="colsum"></th>
+            <th id="col1sum" class="colsum"></th>
+            <th id="col2sum" class="colsum"></th>
+            <th id="col3sum" class="colsum"></th>
+            <th id="col4sum" class="colsum"></th>
+          </tr>
+        </table>
+
+        <input id="startButton" value="Start" type="button" />
+      </div>
+      <p id="instructions">
+        Click <strong>Start</strong> to begin the game and view the opening
+        card. Click a cell on the grid to place the opening card and view the
+        next card from the deck. Complete the grid, making poker combinations in
+        each row and column. Point values for each combination are displayed
+        alongside the table. Score <strong>50</strong> or more points to win.
+      </p>
+
+      <footer>
+        <p>Arthur's Games &copy; 2018 All Rights Reserved</p>
+      </footer>
+    </section>
+  </body>
+</html>
